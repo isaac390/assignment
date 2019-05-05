@@ -1,0 +1,61 @@
+*{
+	margin: 0;padding: 0;
+}
+
+h1{
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1515px;
+ 	font-size: 25px;
+}
+.search {
+	padding:0 0 0 100px;
+}
+.search input{
+	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
+background-position: right;
+}
+body{
+	background-image: url(team1.jpg);width: 100%;
+	height: 100%;
+	font-family:sans-serif;
+	background-repeat: none;
+	background-size: cover; 
+}
+h2{
+	text-align: center;color: white;
+	background-color: black;height: 50px;
+	padding: 5px;font-size: 30px;opacity: .6;
+	
+}
+.first{
+	display: flex;
+	background-color:orange;width:99%;height: 90px;
+	opacity: .7;padding: 8px;color: white;
+
+}
+.sec{
+	display: flex;height: 90px;background-color:grey;
+	opacity: .7;padding: 8px;color: white;
+}
+.third{
+	display: flex;
+	background-color:orange;width:99%;height: 90px;
+	opacity: .7;
+	padding: 8px;color: white;
+
+}
+.last{
+		display: flex;height: 90px;background-color:grey;
+	opacity: .7;padding: 8px;color: white;box-shadow: 1px 2px;
+}
+.fifth{
+	display: flex;
+	background-color:orange;width:99%;height: 90px;
+	opacity: .7;
+	padding: 8px;color: white;
+}
+footer{
+	background-color: black;
+	opacity: 0.8;
+	height: 90px;
+
+}
