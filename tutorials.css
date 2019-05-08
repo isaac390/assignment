@@ -1,3 +1,46 @@
+*{
+	margin: 0;padding: 0;
+}
+
 body{
-	background-image: url(tutorials.jpg);background-size: cover;
+	background-image: url(tutorials.jpg);background-size: cover;font-family: sans-serif;
+}
+h1{
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
+ 	font-size: 25px;
+}
+.search {
+	padding:0 0 0 100px; /*this is the text box in our header */
+}
+.search input{
+	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
+background-position: right;/*we have added a image for seacrh icon*/
+}
+h2{
+	background-color: black;
+	height: 50px;
+	color: white;
+	text-align: center;font-size: 30px;
+	opacity: 0.8;
+	text-shadow: 1px 1px grey;padding: 10px;
+}
+h3{
+	padding: 10px;
+	font-size:25px;
+	border-bottom: 5px solid grey;
+}
+.first{
+	display: flex;
+}
+h4{
+	padding: 10px;
+	font-size: 25px;
+	border-bottom: 3px solid grey;
+}
+.second{
+	display: flex;
+}
+footer{
+	background-color: black;
+	height:50px;
 }

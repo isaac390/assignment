@@ -18,6 +18,30 @@ h1{
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;/*we have added a image for seacrh icon*/
 }
-h2{
-	color: black;
+h2{/*the header called for "web development term"*/
+	color: white;
+	background-color: black;
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	opacity: 0.6;
+
+}
+h3{/*this header to display flex properrty*/
+padding: 10px;
+border-bottom: 3px solid black;
+width: 1200px;
+}
+.first{
+	display: flex;/*flex property as to make the image item in one row*/
+}
+p{/*for the dscription of flex property*/
+background-color: black;
+color: white;
+height: 70px;
+width: 1250px;
+padding:10px;
+border-radius:20px 30px 30px 20px; 
+opacity: 0.6;
+font-size:25px;
 }
