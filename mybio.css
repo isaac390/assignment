@@ -13,10 +13,10 @@ h1{
 {
 	margin: 0;padding: 0;
 }
-.search {
+.search {/*this is the text box in our header */
 	padding:0 0 0 100px;
 }
-.search input{
+.search input{/*we have added a image for seacrh icon*/
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;
 }
@@ -42,44 +42,44 @@ a{
 	list-style: none;/*displaying flex to our unorder list*/
 	display: flex;	
 }
-.first ul li{
+.first ul li{/* the positin to make it fix with text aligning center*/
 	position: relative;width:98%;
 	text-align:center; 
 	font size:25px;
 } 
-.first li:hover .menu li{
+.first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
 	display: block; 
 }
-.menu li{
+.menu li{/*displaying none so that only on the click the display can be done*/
 	display: none;
 
 }
 
 }
-.menu ul{   
+.menu ul{    /*giving flex to the menu class for row display*/
 	display: flex;
 	flex-direction: column;
 	width:90%;
 }
-h2{
-	
+h2{/*contain header with text shadow*/
+
 	padding: 10px;
 	text-shadow:1px 1px;
 }
-h3{
+h3{/*contain header with transarency*/
 	text-align: center;padding: 20px;background-color: black;
 	opacity: 0.6;color:white;
 	font-size: 25px;
 	width:50%;
 }
-.fir{
+.fir{/* displaying flex for the image and discription*/
 	display: flex;
 }
-.fir nav{
+.fir nav{/*contain written element*/
 	padding: 10px;margin: 10px;text-align: center;color: white;
 	font-size: 28px;
 }
-h4{
+h4{/*conatin header with transparent property*/
 	text-align: center;text-shadow: 1px 1px;
 	padding: 20px;
 	background-color: black;
@@ -90,7 +90,7 @@ h4{
 .sec{
 	display: flex;
 }
-.sec nav{
+.sec nav{/*contain wrtten discription*/
 	color: white; text-align: center;
 	padding: 2px;
 	margin: 7px;
@@ -100,12 +100,12 @@ h4{
 background-color:black;
 height: 52px;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){/*to make the screen responsive*/
 	
 	div{flex-direction: column;}
 	a{ flex-direction: column; width: 100%; }
 	h1 {flex-direction: column; width:96%;}
 }
-body{
+body{/*to avoid the overflow to the x axis*/
 	overflow-x: hidden;
 }

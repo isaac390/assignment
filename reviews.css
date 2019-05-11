@@ -1,8 +1,8 @@
-*{
+*{/*determine whole body and spaces*/
 	margin: 0;padding: 0;
 }
 
-body{
+body{/*adding up image to the body and transition added whileloading page*/
 	background-image: url(review.jpg);
 	background-size: cover;
 	font-family: sans-serif;
@@ -30,21 +30,22 @@ a{
 	list-style: none;/*displaying flex to our unorder list*/
 	display: flex;	
 }
-.first ul li{
+.first ul li{/* the positin to make it fix with text aligning center*/
 	position: relative;width:98%;
 	text-align:center; 
 	font size:25px;
 } 
-.first li:hover .menu li{
+.first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
+
 	display: block; 
 }
-.menu li{
+.menu li{/*displaying none so that only on the click the display can be done*/
 	display: none;
 
 }
 
 }
-.menu ul{   
+.menu ul{    /*giving flex to the menu class for row display*/
 	display: flex;
 	flex-direction: column;
 	width:90%;	
@@ -60,14 +61,14 @@ h1{
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;/*we have added a image for seacrh icon*/
 }
- h2{
+ h2{/*header is given and text shadow as well as the border given at the buttom side*/
 	color: black;
 	padding:10px;
 	border-bottom: 3px solid black;
 	width: 500px;
 	text-shadow:1px 1px; 
 }
-.fir{
+.fir{/*this portion is made to provide audio review*/
 	margin: 0px;
 	background-color: grey;
 	width: 900px;
@@ -77,7 +78,7 @@ background-position: right;/*we have added a image for seacrh icon*/
 	height: 70px;
 	opacity: 0.6;
 }
-.sec{
+.sec{/*contain review with the border radius and transition porprty applied*/
 
 	background-color: orange;
 	font-size: 35px;
@@ -94,7 +95,7 @@ h5{
 	
 	width: 500px;
 }
-.third{
+.third{/*contain review with the border radius and transition porprty applied*/
 	padding: 10px;
 	background-color: tomato;
 	width: 1400px;margin: 50px;
@@ -103,14 +104,14 @@ h5{
 	transition:all 0.5s linear 0.3s ;
 	
 }
-.sec:hover{
+.sec:hover{/*hover effect with white colour while touching and with black box shadow*/
 	background-color:white; color:black;box-shadow:8px 8px 8px 8px;
 
 }
-.third:hover{
+.third:hover{/*hover effect with white colour while touching and with box shadow*/
 	background-color:white; color:black;box-shadow:8px 8px 8px 8px;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){/*to make responsive according to the screen size*/
 	
 	 a{ flex-direction: column; width: 100%; }
 	div{flex-direction: column;}
@@ -121,7 +122,7 @@ h5{
 	.fir{flex-direction: column;width:100%;margin: 0;padding: 0px;font-size: 10px;}
 	.third{flex-direction: column;width: 100%; font-size: 10px;margin: 0;padding: 7px;}
 }
-body
+body/*to control the overflow at x drection*/
 {
 overflow-x: hidden;	
 }

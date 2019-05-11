@@ -1,13 +1,14 @@
-body{
+body{/*this is to avoid overflow while making it responsive*/
 	overflow-x: hidden;
 }
 
-*{
+*{/*determine whole body and spaces*/
 	margin: 0;padding: 0;
 }
 h1{
  	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
- 	font-size: 25px;
+ 	font-size: 25px;/* the header given flex as to disply title and input box and logo to x axis*/
+}
 }
 .search {
 	padding:0 0 0 100px; /*this is the text box in our header */
@@ -41,26 +42,27 @@ a{
 	list-style: none;/*displaying flex to our unorder list*/
 	display: flex;	
 }
-.first ul li{
+.first ul li{/* to make list item position fixed in a position and text alisgn center*/
 	position: relative;width:98%;
 	text-align:center; 
 	font size:25px;
 } 
-.first li:hover .menu li{
+.first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
+
 	display: block; 
 }
-.menu li{
+.menu li{/*displaying none so that only on the click the display can be done*/
 	display: none;
 
 }
 
 }
-.menu ul{   
+.menu ul{ /*giving flex to the menu class for row display*/   
 	display: flex;
 	flex-direction: column;
 	width:90%;
 }
- h2{
+ h2{/*contain highlights*/
 	margin: 0px;
 	padding: 80px 0px 0px 10px;
 	border-bottom:3px solid black;
@@ -69,20 +71,20 @@ a{
 	display: flex;
 	margin: 0;
 }
-.sec p{
-	padding: 10px 0 0; 
+.sec p{/*conatin embed video*/
+	padding: 5px 0 0; 
 }
-.sec section{
+.sec section{/*conatin embed video*/
 	padding: 5px;
 }
-.sec{
+.sec{/*displaying flex to embed video*/
 display: flex;
 }
-nav{
+nav{/*conatin embed video*/
 	padding:5px;
 }
 
- h3{
+ h3{/*conatin sports*/
 	padding: 15px 0px 0px 10px;
 	border-bottom:3px solid black;
 	width:99%;
@@ -90,19 +92,19 @@ nav{
 	font-weight:bold;
 
 }
-.third{   
+.third{   /*displaying flex to embed video*/
 	display: flex;
 }
-.third section{
+.third section{/*conatin embed video*/
 	padding: 5px;
 }
-p{
-	padding: 10px 0px 0px;margin: 0;
+p{/*conatin embed video*/
+	padding: 5px 0px 0px;margin: 0;
 }
 h4{
 	border-bottom: 3px solid grey;text-align: center;
 }
-.last{
+.last{/*conatin advertisemnt with written element with transparency*/
 	background-color: black;
 	
 	padding: 0px 0px 0px 0px;
@@ -112,7 +114,7 @@ h4{
 	width:100%;
 	line-height: 40px;
 }
-.end{
+.end{/*conatin terms and condition with  transparency*/
 	text-align: center;
 
 	background-color: black;
@@ -124,15 +126,15 @@ h4{
 	height: 90px;
 	opacity: 0.8;
 }
-.ending {
+.ending {/*TO display the border black line*/
 	background-color: black;
-	text-align: center;
+	
 	width: 100%;
 	height:20px;
 	margin:0px;
 
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){/*to make the screen responsive*/
 	
 	 a{ flex-direction: column; width: 100%; }
 	div{flex-direction: column;}

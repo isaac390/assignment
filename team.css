@@ -1,15 +1,15 @@
-*{
+*{/*determine whole body and spaces*/
 	margin: 0;padding: 0;
 }
 
 h1{
  	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1499px;
- 	font-size: 25px;
+ 	font-size: 25px;/* the header given flex as to disply title and input box and logo to x axis*/
 }
-.search {
+.search {/*input box fo the search box*/
 	padding:0 0 0 100px;
 }
-.search input{
+.search input{/* image of search logo*/
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;
 }
@@ -33,72 +33,72 @@ a{
 	list-style: none;/*displaying flex to our unorder list*/
 	display: flex;	
 }
-.first ul li{
+.first ul li{/* the positin to make it fix with text aligning center*/
 	position: relative;width:98%;
 	text-align:center; 
 	font size:25px;
 } 
-.first li:hover .menu li{
+.first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/
 	display: block; 
 }
-.menu li{
+.menu li{/*displaying none so that only on the click the display can be done*/
 	display: none;
 
 }
 
 }
-.menu ul{   
+.menu ul{   /*giving flex to the menu class for row display*/
 	display: flex;
 	flex-direction: column;
 	width:90%;
 }
-body{
+body{/*adding up image to the body determining font family and some width*/
 	background-image: url(team1.jpg);width: 100%;
 	height: 100%;
 	font-family:sans-serif;
 	background-repeat: none;
 	background-size: cover; 
 }
-h2{
+h2{/*header with transparency*/
 	text-align: center;color: white;
 	background-color: black;height: 50px;
 	padding: 5px;font-size: 30px;opacity: .6;
 	
 }
-.fir{
+.fir{/*dipslying flex both for the png image and language*/
 	display: flex;
 	background-color:orange;width:99%;height: 90px;
 	opacity: .7;padding: 8px;color: white;
 
 }
-.sec{
+.sec{/*dipslying flex both for the png image and language*/
 	display: flex;height: 90px;background-color:grey;
 	opacity: .7;padding: 8px;color: white;
 }
-.third{
+.third{/*dipslying flex both for the png image and language*/
 	display: flex;
 	background-color:orange;width:99%;height: 90px;
 	opacity: .7;
 	padding: 8px;color: white;
 
 }
-.last{
+.last{/*dipslying flex both for the png image and language*/
 		display: flex;height: 90px;background-color:grey;
 	opacity: .7;padding: 8px;color: white;box-shadow: 1px 2px;
 }
-.fifth{
+.fifth{/*dipslying flex both for the png image and language*/
 	display: flex;
 	background-color:orange;width:99%;height: 90px;
 	opacity: .7;
 	padding: 8px;color: white;
 }
-footer{
+footer{/*for the end blackground color loaded with black*/
 	background-color: black;
 	opacity: 0.8;
 	height: 90px;
 
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){/*to make the screen responsive*/
 	 a{ flex-direction: column; width: 99%; }
 	h1 {flex-direction:column; width: 99%;}
 	h2{width:99%}
@@ -110,7 +110,7 @@ footer{
 	.fifth{width: 99%;}
 
 }
-body{
+body{/*to avoid the slide bar to the x axis during responsiveness*/
 	overflow-x: hidden;
 }
 
