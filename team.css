@@ -3,7 +3,7 @@
 }
 
 h1{
- 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1515px;
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1499px;
  	font-size: 25px;
 }
 .search {
@@ -12,6 +12,45 @@ h1{
 .search input{
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;
+}
+a{
+ 	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
+ 	text-decoration: none; 
+ 	justify-content: center;
+ 	height: 50px;background-color:lightgrey;
+ 	color: black;
+ 	font-size: 20px;
+ 	padding: 2px 5px;
+ 	font-weight: bold;
+ 	opacity: .6;
+ 	width: 96%;
+
+}
+.first a:hover{
+	background-color:grey;/*add hover effect in our navigation bar with grey colour in display*/
+}
+.first ul{
+	list-style: none;/*displaying flex to our unorder list*/
+	display: flex;	
+}
+.first ul li{
+	position: relative;width:98%;
+	text-align:center; 
+	font size:25px;
+} 
+.first li:hover .menu li{
+	display: block; 
+}
+.menu li{
+	display: none;
+
+}
+
+}
+.menu ul{   
+	display: flex;
+	flex-direction: column;
+	width:90%;
 }
 body{
 	background-image: url(team1.jpg);width: 100%;
@@ -26,7 +65,7 @@ h2{
 	padding: 5px;font-size: 30px;opacity: .6;
 	
 }
-.first{
+.fir{
 	display: flex;
 	background-color:orange;width:99%;height: 90px;
 	opacity: .7;padding: 8px;color: white;
@@ -59,3 +98,19 @@ footer{
 	height: 90px;
 
 }
+@media screen and (max-width: 600px){
+	 a{ flex-direction: column; width: 99%; }
+	h1 {flex-direction:column; width: 99%;}
+	h2{width:99%}
+	div{flex-direction: ;height: auto; padding: 0;}
+	.fir{width:99%;}
+	.sec{width: 99%;}
+	.third{width: 99%;}
+	.last{width:99%;}
+	.fifth{width: 99%;}
+
+}
+body{
+	overflow-x: hidden;
+}
+

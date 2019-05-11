@@ -13,11 +13,54 @@ body{
 	font-family: sans-serif;
 	background-color:lightgrey;
 	background-image: url(paper.jpg);background-size: cover;
+	transition:all 0.5s linear 1s ;
 	
 }
 *{
 	margin: 0;padding: 0;
 }
+a{
+ 	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
+ 	text-decoration: none; 
+ 	justify-content: center;
+ 	height: 50px;background-color:lightgrey;
+ 	color: black;
+ 	font-size: 20px;
+ 	padding: 2px 5px;
+ 	font-weight: bold;
+ 	opacity: .6;
+ 	width: 96%;
+
+}
+.first a:hover{
+	background-color:grey;/*add hover effect in our navigation bar with grey colour in display*/
+}
+.first ul{
+	list-style: none;/*displaying flex to our unorder list*/
+	display: flex;	
+}
+.first ul li{
+	position: relative;width:98%;
+	text-align:center; 
+	font size:25px;
+} 
+.first li:hover .menu li{
+	display: block; 
+}
+.menu li{
+	display: none;
+
+}
+
+}
+.menu ul{   
+	display: flex;
+	flex-direction: column;
+	width:90%;
+}
+
+
+
 h2{
 	padding: 10px;background-color: black;
 	color: white;height: 50px;text-align: center;
@@ -29,7 +72,7 @@ h2{
 
 }
 
-.first{
+.fir{
 background-color: orange;
 flex:2;
 height: 120px;
@@ -52,7 +95,7 @@ h3{
 
 	padding: 10px;
 	font-size: 20px;
-	color: white;
+	color:black;
 	height: 70px;
 	
 }
@@ -63,7 +106,11 @@ h5{
 	width: 300px;
 	color: white;
 	padding: 20px;
-
+	transition:all 0.5s linear 0.5s ;
+}
+h5:hover{
+	background-color: white;color: black;
+	box-shadow:8px 8px 8px 8px;
 }
 .third{
 margin: 25px;
@@ -74,4 +121,15 @@ font-size: 25px;
 footer{
 background-color:black;
 height: 52px;
+}
+@media screen and (max-width: 600px){
+	
+	 a{ flex-direction: column; width: 100%; }
+	div{flex-direction: column;}
+	.first h3{flex-direction: column;width: 100%;font-size: 10px;color: black;padding: 2px;}
+	.sec h4{flex-direction: column;width: 100%;font-size: 15px;padding: 2px;}
+	h1 {flex-direction: column; width: 100%;}
+}
+body{
+	overflow-x: hidden;
 }

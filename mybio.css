@@ -2,12 +2,15 @@ body{
 	background-image: url(123.jpg);width: 100%;
 	height: 100%;
 	font-family:sans-serif;
+
+	
 }
 h1{
  	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1515px;
  	font-size: 25px;
 }
-*{
+*/*represent whole body and to make margin and padding zero*/
+{
 	margin: 0;padding: 0;
 }
 .search {
@@ -16,6 +19,47 @@ h1{
 .search input{
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;
+}
+
+
+a{
+ 	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
+ 	text-decoration: none; 
+ 	justify-content: center;
+ 	height: 50px;background-color:lightgrey;
+ 	color: black;
+ 	font-size: 20px;
+ 	padding: 2px 5px;
+ 	font-weight: bold;
+ 	opacity: .6;
+ 	width: 96%;
+
+}
+.first a:hover{
+	background-color:grey;/*add hover effect in our navigation bar with grey colour in display*/
+}
+.first ul{
+	list-style: none;/*displaying flex to our unorder list*/
+	display: flex;	
+}
+.first ul li{
+	position: relative;width:98%;
+	text-align:center; 
+	font size:25px;
+} 
+.first li:hover .menu li{
+	display: block; 
+}
+.menu li{
+	display: none;
+
+}
+
+}
+.menu ul{   
+	display: flex;
+	flex-direction: column;
+	width:90%;
 }
 h2{
 	
@@ -28,10 +72,10 @@ h3{
 	font-size: 25px;
 	width:50%;
 }
-.first{
+.fir{
 	display: flex;
 }
-.first nav{
+.fir nav{
 	padding: 10px;margin: 10px;text-align: center;color: white;
 	font-size: 28px;
 }
@@ -55,4 +99,13 @@ h4{
  footer{
 background-color:black;
 height: 52px;
+}
+@media screen and (max-width: 600px){
+	
+	div{flex-direction: column;}
+	a{ flex-direction: column; width: 100%; }
+	h1 {flex-direction: column; width:96%;}
+}
+body{
+	overflow-x: hidden;
 }

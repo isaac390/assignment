@@ -6,7 +6,48 @@ body{
 	background-image: url(review.jpg);
 	background-size: cover;
 	font-family: sans-serif;
-	
+
+	transition:all 0.5s linear 1s ;
+}
+
+a{
+ 	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
+ 	text-decoration: none; 
+ 	justify-content: center;
+ 	height: 50px;background-color:lightgrey;
+ 	color: black;
+ 	font-size: 20px;
+ 	padding: 2px 5px;
+ 	font-weight: bold;
+ 	opacity: .6;
+ 	width: 96%;
+
+}
+.first a:hover{
+	background-color:grey;/*add hover effect in our navigation bar with grey colour in display*/
+}
+.first ul{
+	list-style: none;/*displaying flex to our unorder list*/
+	display: flex;	
+}
+.first ul li{
+	position: relative;width:98%;
+	text-align:center; 
+	font size:25px;
+} 
+.first li:hover .menu li{
+	display: block; 
+}
+.menu li{
+	display: none;
+
+}
+
+}
+.menu ul{   
+	display: flex;
+	flex-direction: column;
+	width:90%;	
 }
 h1{
  	background-color: white;padding: 20px;text-shadow: 1px 1px;display:flex;width:1495px;
@@ -26,7 +67,7 @@ background-position: right;/*we have added a image for seacrh icon*/
 	width: 500px;
 	text-shadow:1px 1px; 
 }
-.first{
+.fir{
 	margin: 0px;
 	background-color: grey;
 	width: 900px;
@@ -45,6 +86,7 @@ background-position: right;/*we have added a image for seacrh icon*/
 	margin: 25px;
 	border-radius: 20px 35px 45px 20px;
 	height: 180px;
+	transition:all 0.5s linear 0.3s ;
 }
 h5{
 	text-align: center;
@@ -58,5 +100,28 @@ h5{
 	width: 1400px;margin: 50px;
 	height: 150px; font-size: 30px;
 	border-radius: 20px 35px 45px 20px;
+	transition:all 0.5s linear 0.3s ;
 	
+}
+.sec:hover{
+	background-color:white; color:black;box-shadow:8px 8px 8px 8px;
+
+}
+.third:hover{
+	background-color:white; color:black;box-shadow:8px 8px 8px 8px;
+}
+@media screen and (max-width: 600px){
+	
+	 a{ flex-direction: column; width: 100%; }
+	div{flex-direction: column;}
+	h2{flex-direction: column;width: 96%;}
+	h1 {flex-direction: column; width:95%;}
+	.sec{flex-direction: column;width:100%;font-size: 10px;padding:7px;
+			margin: 0;height: 30px;}
+	.fir{flex-direction: column;width:100%;margin: 0;padding: 0px;font-size: 10px;}
+	.third{flex-direction: column;width: 100%; font-size: 10px;margin: 0;padding: 7px;}
+}
+body
+{
+overflow-x: hidden;	
 }

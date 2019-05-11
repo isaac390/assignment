@@ -2,6 +2,48 @@
 	margin: 0;padding: 0;
 }
 
+a{
+ 	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
+ 	text-decoration: none; 
+ 	justify-content: center;
+ 	height: 50px;background-color:lightgrey;
+ 	color: black;
+ 	font-size: 20px;
+ 	padding: 2px 5px;
+ 	font-weight: bold;
+ 	opacity: .6;
+ 	width: 96%;
+
+}
+.first a:hover{
+	background-color:grey;/*add hover effect in our navigation bar with grey colour in display*/
+}
+.first ul{
+	list-style: none;/*displaying flex to our unorder list*/
+	display: flex;	
+}
+.first ul li{
+	position: relative;width:98%;
+	text-align:center; 
+	font size:25px;
+} 
+.first li:hover .menu li{
+	display: block; 
+}
+.menu li{
+	display: none;
+
+}
+
+}
+.menu ul{   
+	display: flex;
+	flex-direction: column;
+	width:90%;
+}
+
+
+
 body{
 	background-image: url(tutorials.jpg);background-size: cover;font-family: sans-serif;
 }
@@ -29,7 +71,7 @@ h3{
 	font-size:25px;
 	border-bottom: 5px solid grey;
 }
-.first{
+.fir{
 	display: flex;
 }
 h4{
@@ -43,4 +85,17 @@ h4{
 footer{
 	background-color: black;
 	height:50px;
+}
+
+@media screen and (max-width: 600px){
+	
+	a{ flex-direction: column; width:100%; }
+	div{flex-direction: column;}
+	.sec p iframe{flex-direction: column;}
+	h1 {flex-direction: column; width:100%;}
+	footer{width: 100%;}
+	h2{width: 100%;}
+}
+body{
+	overflow-x: hidden;
 }

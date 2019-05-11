@@ -1,11 +1,50 @@
 *{
 	margin: 0;padding: 0;
 }
+a{
+ 	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
+ 	text-decoration: none; 
+ 	justify-content: center;
+ 	height: 50px;background-color:lightgrey;
+ 	color: black;
+ 	font-size: 20px;
+ 	padding: 2px 5px;
+ 	font-weight: bold;
+ 	opacity: .6;
+ 	width: 96%;
 
+}
+.first a:hover{
+	background-color:grey;/*add hover effect in our navigation bar with grey colour in display*/
+}
+.first ul{
+	list-style: none;/*displaying flex to our unorder list*/
+	display: flex;	
+}
+.first ul li{
+	position: relative;width:98%;
+	text-align:center; 
+	font size:25px;
+} 
+.first li:hover .menu li{
+	display: block; 
+}
+.menu li{
+	display: none;
+
+}
+
+}
+.menu ul{   
+	display: flex;
+	flex-direction: column;
+	width:90%;	
+}
 body{
 	background-image: url(glossary.jpg);
 	background-size: cover;
 	font-family: sans-serif;
+	transition:all 0.5s linear 1s ;
 }
 h1{
  	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
@@ -32,7 +71,7 @@ padding: 10px;
 border-bottom: 3px solid black;
 width: 1200px;
 }
-.first{
+.fir{
 	display: flex;/*flex property as to make the image item in one row*/
 }
 p{/*for the dscription of flex property*/
@@ -44,4 +83,26 @@ padding:10px;
 border-radius:20px 30px 30px 20px; 
 opacity: 0.6;
 font-size:25px;
+}
+.sec{
+	display: flex;
+}
+h4{
+	
+padding: 10px;
+border-bottom: 3px solid black;
+width: 900px;
+}
+@media screen and (max-width: 600px){
+	
+	 a{ flex-direction: column; width: 100%; }
+	div{flex-direction: column;}
+	h1 {flex-direction: column; width: 100%;}
+	h2{flex-direction: column;width: 100%;}
+	h3{width: 30%;}
+	h4{width: 30%;}
+	p{width: 80%;font-size: 10px}
+}
+body{
+	overflow-x: hidden;
 }
