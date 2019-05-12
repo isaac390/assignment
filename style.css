@@ -6,10 +6,10 @@ body{/*this is to avoid overflow while making it responsive*/
 	margin: 0;padding: 0;
 }
 h1{
- 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1500px;
  	font-size: 25px;/* the header given flex as to disply title and input box and logo to x axis*/
 }
-}
+
 .search {
 	padding:0 0 0 100px; /*this is the text box in our header */
 }
@@ -45,7 +45,7 @@ a{
 .first ul li{/* to make list item position fixed in a position and text alisgn center*/
 	position: relative;width:98%;
 	text-align:center; 
-	font size:25px;
+	
 } 
 .first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
 
@@ -56,7 +56,7 @@ a{
 
 }
 
-}
+
 .menu ul{ /*giving flex to the menu class for row display*/   
 	display: flex;
 	flex-direction: column;
@@ -67,7 +67,7 @@ a{
 	padding: 80px 0px 0px 10px;
 	border-bottom:3px solid black;
 	width: 99%;
-	font-weight: none;
+	
 	display: flex;
 	margin: 0;
 }
@@ -95,7 +95,7 @@ nav{/*conatin embed video*/
 .third{   /*displaying flex to embed video*/
 	display: flex;
 }
-.third section{/*conatin embed video*/
+.third p{/*conatin embed video*/
 	padding: 5px;
 }
 p{/*conatin embed video*/
@@ -123,7 +123,7 @@ h4{
 	
 	h1 {flex-direction: column; width: 100%;}
 }
-.media section{/*for the social media links*/
+.media p{/*for the social media links*/
 	display: flex;
 }
 .link{

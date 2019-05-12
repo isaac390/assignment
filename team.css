@@ -36,7 +36,7 @@ a{
 .first ul li{/* the positin to make it fix with text aligning center*/
 	position: relative;width:98%;
 	text-align:center; 
-	font size:25px;
+	
 } 
 .first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/
 	display: block; 
@@ -46,7 +46,7 @@ a{
 
 }
 
-}
+
 .menu ul{   /*giving flex to the menu class for row display*/
 	display: flex;
 	flex-direction: column;
@@ -56,7 +56,7 @@ body{/*adding up image to the body determining font family and some width*/
 	background-image: url(team1.jpg);width: 100%;
 	height: 100%;
 	font-family:sans-serif;
-	background-repeat: none;
+	
 	background-size: cover; 
 }
 h2{/*header with transparency*/
@@ -102,7 +102,7 @@ footer{/*for the end blackground color loaded with black*/
 	 a{ flex-direction: column; width: 99%; }
 	h1 {flex-direction:column; width: 99%;}
 	h2{width:99%}
-	div{flex-direction: ;height: auto; padding: 0;}
+
 	.fir{width:99%;}
 	.sec{width: 99%;}
 	.third{width: 99%;}

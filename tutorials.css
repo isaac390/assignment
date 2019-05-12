@@ -22,21 +22,21 @@ a{
 	list-style: none;/*displaying flex to our unorder list*/
 	display: flex;	
 }
-.first ul li{
+.first ul li{/* the positin to make it fix with text aligning center*/
 	position: relative;width:98%;
 	text-align:center; 
-	font size:25px;
+	
 } 
-.first li:hover .menu li{
+.first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
 	display: block; 
 }
-.menu li{
+.menu li{/*displaying none so that only on the click the display can be done*/
 	display: none;
 
 }
 
-}
-.menu ul{   
+
+.menu ul{    /*giving flex to the menu class for row display*/
 	display: flex;
 	flex-direction: column;
 	width:90%;
@@ -48,17 +48,17 @@ body{
 	background-image: url(tutorials.jpg);background-size: cover;font-family: sans-serif;
 }
 h1{
- 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
- 	font-size: 25px;
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1500px;
+ 	
 }
-.search {
+.search {/*this is the text box in our header */
 	padding:0 0 0 100px; /*this is the text box in our header */
 }
-.search input{
+.search input{/*we have added a image for seacrh icon*/
 	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
 background-position: right;/*we have added a image for seacrh icon*/
 }
-h2{
+h2{/*header representation with transaprency and text shadow*/ 
 	background-color: black;
 	height: 50px;
 	color: white;
@@ -66,28 +66,28 @@ h2{
 	opacity: 0.8;
 	text-shadow: 1px 1px grey;padding: 10px;
 }
-h3{
+h3{/*header representation*/
 	padding: 10px;
 	font-size:25px;
 	border-bottom: 5px solid grey;
 }
-.fir{
+.fir{/* displaying flex to the embed videos*/
 	display: flex;
 }
-h4{
+h4{/*header representation*/
 	padding: 10px;
 	font-size: 25px;
 	border-bottom: 3px solid grey;
 }
-.second{
+.second{/* displaying flex to the embed videos*/
 	display: flex;
 }
-footer{
+footer{/*for the end blackground color loaded with black*/
 	background-color: black;
 	height:50px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){/* to make the web site responsive*/
 	
 	a{ flex-direction: column; width:100%; }
 	div{flex-direction: column;}
@@ -96,6 +96,6 @@ footer{
 	footer{width: 100%;}
 	h2{width: 100%;}
 }
-body{
+body{/* to avoid overflow in x direction*/
 	overflow-x: hidden;
 }

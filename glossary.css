@@ -9,8 +9,8 @@ body{
 	transition:all 0.5s linear 1s ;
 }
 h1{
- 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
- 	font-size: 25px;
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1500px;
+ 	
 }
 .search {
 	padding:0 0 0 100px; /*this is the text box in our header */
@@ -43,7 +43,7 @@ a{
 .first ul li{/* to make list item position fixed in a position and text alisgn center*/
 	position: relative;width:98%;
 	text-align:center; 
-	font size:25px;
+	
 } 
 .first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
 
@@ -54,7 +54,7 @@ a{
 
 }
 
-}
+
 .menu ul{ /*giving flex to the menu class for row display*/   
 	display: flex;
 	flex-direction: column;
