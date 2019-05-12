@@ -126,15 +126,9 @@ body/*to control the overflow at x drection*/
 {
 overflow-x: hidden;	
 }
-.media section{
-	display: flex;
-}
-.link{
-	height: 50px;padding: 0;
 
-}
-footer{
+footer{/*this footer only contain that is black colour background just for the a little bar show*/
 	background-color: black;
-	height: 35px;
+	height: 65px;
 	width: 100%;
 }
