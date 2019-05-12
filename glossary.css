@@ -1,6 +1,25 @@
 *{/*determine whole body and spaces*/
 	margin: 0;padding: 0;
 }
+
+body{
+	background-image: url(glossary.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+	transition:all 0.5s linear 1s ;
+}
+h1{
+ 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
+ 	font-size: 25px;
+}
+.search {
+	padding:0 0 0 100px; /*this is the text box in our header */
+}
+.search input{
+	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
+background-position: right;/*we have added a image for seacrh icon*/
+
+}
 a{
  	display: flex;align-items: center;/* justifying our content in centre and displayig flex our */
  	text-decoration: none; 
@@ -21,12 +40,13 @@ a{
 	list-style: none;/*displaying flex to our unorder list*/
 	display: flex;	
 }
-.first ul li{/* the positin to make it fix with text aligning center*/
+.first ul li{/* to make list item position fixed in a position and text alisgn center*/
 	position: relative;width:98%;
 	text-align:center; 
 	font size:25px;
 } 
 .first li:hover .menu li{/*displaying block to the list and giving it the hover effect to touch the element*/ 
+
 	display: block; 
 }
 .menu li{/*displaying none so that only on the click the display can be done*/
@@ -34,28 +54,16 @@ a{
 
 }
 
-.menu ul{   /*giving flex to the menu class for row display*/
+}
+.menu ul{ /*giving flex to the menu class for row display*/   
 	display: flex;
 	flex-direction: column;
-	width:90%;	
+	width:90%;
 }
-body{
-	background-image: url(glossary.jpg);
-	background-size: cover;
-	font-family: sans-serif;
-	transition:all 0.5s linear 1s ;
-}
-h1{
- 	background-color: white;padding: 10px;text-shadow: 1px 1px;display:flex;width:1400px
- 	font-size: 25px;
-}
-.search {
-	padding:0 0 0 100px; /*this is the text box in our header */
-}
-.search input{
-	font-size: 25px;background-image: url(logo.png);background-repeat: no-repeat;
-background-position: right;/*we have added a image for seacrh icon*/
-}
+ 
+
+
+
 h2{/*the header called for "web development term"*/
 	color: white;
 	background-color: black;
